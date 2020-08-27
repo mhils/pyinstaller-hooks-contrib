@@ -324,3 +324,10 @@ def test_publicsuffix2(pyi_builder):
     pyi_builder.test_source("""
         import publicsuffix2
         """)
+
+
+@importorskip('pydivert')
+def test_pydivert(pyi_builder):
+    pyi_builder.test_source("""
+        import pydivert
+        """)
